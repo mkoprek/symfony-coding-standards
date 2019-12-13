@@ -1,0 +1,26 @@
+{
+    "name": "mkoprek/symfony-coding-standards",
+    "description": "Extended Symfony projects coding standards as composer command.",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Maciej Koprek",
+            "email": "mkoprek@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "composer/composer": "^1.9",
+        "composer-plugin-api": "^1.1",
+        "phpstan/phpstan": "^0.12",
+        "slevomat/coding-standard": "^6.0",
+        "friendsofphp/php-cs-fixer": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SymfonyCodingStandards\\": "src"
+        }
+    },
+    "extra": {
+        "class": "SymfonyCodingStandards\\Plugin"
+    }
+}
